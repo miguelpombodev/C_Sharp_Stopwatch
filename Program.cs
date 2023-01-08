@@ -7,6 +7,14 @@ namespace Stopwatch {
             Start(6);
         }
 
+        static void MenuApp() {
+            Console.Clear();
+            Console.WriteLine("S = Seconds");
+            Console.WriteLine("M = Minutes");
+            Console.WriteLine("0 = Exit");
+            Console.WriteLine("How long will it count?");
+        }
+
         static void Start(int time) {
             int currentTime = 0;
 
@@ -20,5 +28,6 @@ namespace Stopwatch {
             Console.Clear();
             Console.WriteLine("Stopwatch finished... Returning to Menu");
         }
+
     }
 }
